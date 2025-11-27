@@ -143,4 +143,6 @@ Contributions are welcome — open an issue or a PR. Please follow these steps:
 4. Submit a pull request
 
 ---
-
+## Author
+**Rishabh Chauhan**  
+Email: rishabhc2234@gmail.com
