@@ -1,0 +1,47 @@
+{
+  "name": "vgb-website",
+  "version": "1.0.0",
+  "description": "A modern VGB website built using the MERN stack",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "server": "nodemon server/index.js",
+    "client": "cd client && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-deps": "npm install && cd client && npm install && cd ../server && npm install",
+    "build": "cd client && npm run build",
+    "e2e-auth-test": "node scripts/e2e-auth-test.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mern",
+    "bni",
+    "react",
+    "node",
+    "express",
+    "mongodb"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "body-parser": "^2.2.1",
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^9.0.0",
+    "nodemailer": "^7.0.11",
+    "nodemon": "^3.1.11",
+    "razorpay": "^2.9.6",
+    "react-icons": "^5.5.0",
+    "stripe": "^20.0.0",
+    "styled-components": "^6.1.15"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5",
+    "axios": "^1.8.3"
+  }
+}

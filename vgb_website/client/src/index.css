@@ -1,0 +1,153 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Variables */
+:root {
+  --primary-color: #cd232e;
+  --secondary-color: #2b2928;
+  --light-color: #f8f7f7;
+  --gray-color: #726666;
+  --gold-color: #dcb484;
+  --font-family: 'Poppins', sans-serif;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--secondary-color);
+  background-color: var(--light-color);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #b01c26;
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #1a1a1a;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-outline:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* Text */
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Forms */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+/* Main layout */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
