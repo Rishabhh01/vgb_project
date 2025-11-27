@@ -107,10 +107,3 @@ Contributions are welcome — open an issue or a PR. Please follow these steps:
 
 ---
 
-## 📜 License
-
-This project is available under the MIT License — see `vgb_website/LICENSE` if present or add a license file.
-
----
-
-If you'd like, I can also add this README to your repo now and push the commit — do you want me to add it? ✅
