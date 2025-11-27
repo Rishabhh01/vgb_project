@@ -1,0 +1,28 @@
+# Render manifest for vgb_website (monorepo)
+# This file declares two services:
+#  - a Node web service for the API server
+#  - a Static site for the Vite-built React client
+#
+# DO NOT add secrets or production credentials here. Use Render Dashboard to configure
+# environment variables like MONGO_URI, JWT_SECRET, EMAIL_PASS, RAZORPAY keys, etc.
+
+services:
+  - type: web
+    name: vgb-website-server
+    env: node
+    branch: main
+    rootDir: vgb_website/server
+    buildCommand: npm install
+    startCommand: npm start
+    plan: free
+    # optional: health check path (set to an API endpoint that returns 2xx when healthy)
+    healthCheckPath: /api
+
+  - type: static
+    name: vgb-website-client
+    env: static
+    branch: main
+    rootDir: vgb_website/client
+    buildCommand: npm install && npm run build
+    publishPath: dist
+    plan: free
